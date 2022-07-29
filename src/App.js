@@ -64,6 +64,7 @@ const App = () => {
     <div onKeyPress={keypressHandler} tabIndex={-1} className="App">
       <h1>Type the Alphabet</h1>
       <p>Typing game to see how fast you type. Timer starts when you do :)</p>
+      <p className='second-instruction'>Make sure you click on the screen before you start typing ;)</p>
       <AlphabetBox
         i={i}
         arr={arr}
