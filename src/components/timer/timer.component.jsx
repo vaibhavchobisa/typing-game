@@ -20,10 +20,11 @@ const Timer = ({ time, setTime, isFirstAlphaPressed, i }) => {
     return (
         <div className="timer-container">
             <span className="digits seconds">
-                Time: {Math.floor(time / 1000)}.
+                <span>Time: </span>
+                <span>{Math.floor(time / 1000)}.</span>
             </span>
             <span className="digits mili-seconds">
-                {("0" + (time) % 1000).slice(-3)}s
+                {("00" + (time) % 1000).slice(-3)}s
             </span>
         </div>
     );

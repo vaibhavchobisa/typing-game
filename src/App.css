@@ -59,7 +59,7 @@ button:hover {
     margin-top: 40px;
     background-color: white;
     color: #068e33;
-    width: 450px;
+    width: 470px;
     height: 200px;
     display: flex;
     align-items: center;
@@ -75,11 +75,28 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: scale-up;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.alphabet-effects {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+@keyframes scale-up {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
 }
 
 .timer-container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
     font-size: 25px;
+    width: 200px;
 }
 
 .best-time {
